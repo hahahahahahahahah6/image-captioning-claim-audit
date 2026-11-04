@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-captioning-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{name = "Documentation claim auditor contributors"}]
+dependencies = []
+
+[project.scripts]
+image-captioning-claim-audit = "image_captioning_claim_audit.__main__:main"
+
+[tool.setuptools]
+packages = ["image_captioning_claim_audit", "tests"]
